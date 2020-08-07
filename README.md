@@ -1,4 +1,4 @@
-# Chocolate Front 
+# Chocolate Front
 
 ## Available Scripts
 
@@ -21,3 +21,20 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
+
+### ENV
+
+```
+REACT_APP_API=
+```
+
+
+
+
+
+LOCAL -> http://localhost:3000
+
+EXCLUIR CHOCOLATE ->  HOMOLOG -> STAGING = https://api.staging.chocolatesgaroto.com -> .env
+
+EXCLUIR CHOCOLATE -> PROD -> https://api.chocolatesgaroto.com -> .
+

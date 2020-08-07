@@ -26,11 +26,11 @@ function App() {
             {infos.map((info) => (
               <li key={info.id}>
                 <div>
-                  <img src={chocolateImg} alt="Imagem do chocolate" />
+                  <img src={info.imagemUrl} alt="Imagem do chocolate" />
                   <div>
                     <h2>{info.email}</h2>
                     <p>{info.name}</p>
-                    <p>Info 2</p>
+                    <p>{info.username}</p>
                   </div>
                 </div>
               </li>
