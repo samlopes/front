@@ -9,7 +9,7 @@ function App() {
 
   useEffect(() => {
     async function loadInfos() {
-      const response = await api.get('users');
+      const response = await api.get('');
       setInfos(response.data);
     }
     loadInfos();
@@ -26,11 +26,11 @@ function App() {
             {infos.map((info) => (
               <li key={info.id}>
                 <div>
-                  <img src={info.imagemUrl} alt="Imagem do chocolate" />
+                  <img src={info.imagem} alt="Imagem do chocolate" />
                   <div>
-                    <h2>{info.email}</h2>
-                    <p>{info.name}</p>
-                    <p>{info.username}</p>
+                    <h2>{info.nome}</h2>
+                    <p>{info.marca}</p>
+                    <p> R$ {info.valor}</p>
                   </div>
                 </div>
               </li>
