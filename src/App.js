@@ -10,11 +10,11 @@ function App() {
   useEffect(() => {
     async function loadInfos() {
       const response = await api.get('');
+
       setInfos(response.data);
     }
     loadInfos();
   }, []);
-
   return (
     <div className="App">
       <>
@@ -24,7 +24,7 @@ function App() {
           <h1>Chocolates</h1>
           <ChocolateList>
             {infos.map((info) => (
-              <li key={info.id}>
+              <li key={info._id}>
                 <div>
                   <img src={info.imagem} alt="Imagem do chocolate" />
                   <div>
